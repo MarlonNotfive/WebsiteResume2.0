@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/blogs.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger active" id="burger"><span></span></div>
+    <nav class="navigation show" id="navi">
+        <div class="logo">
+            <img src="../img/Animatedlogo.gif" alt="">
+            <h1 style="font-family: VT323; line-height: .8;" >NotFive;<br><span style="font-family: VT323; font-size: 1rem; line-height: .2; color: #ed5b2d;">Full stack Dev</span></h1>
+        </div>
+        <div class="links">
+            <a href="./index.html">HOME;</a>
+            <a href="./skills.html">SKILLS;</a>
+            <a href="./blogs.html" class="selected">BLOGS;</a>
+            <a href="./contact.html">CONTACT;</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container-blogs">
+            <h1>BLOGS</h1>
+            <div class="line">
+        </div>
+    </header>
+    <section>
+        <div class="blog-cards-container">
+            <div class="thumbnail">
+                <div class="thumbnail-pic"><img src="./img/blogs/blog1.jpg" alt=""></div>
+                <div class="author">
+                    <div class="thumbnail-author-pic"></div>
+                    <div class="author-details">
+                        <div class="author-name">Marlon G. Delima Jr.</div>
+                        <div class="date-time"><p>07/04/23 4:25PM</p></div>
+                    </div>
+                </div>
+                <div class="thumbnail-title"><h3>Why Pursuing a BSIT Degree is a Smart Choice for Your Career</h3></div>
+                <div class="thumbnail-desc">Pursuing a BSIT degree can be a smart choice for your career. With high demand, potential for a high salary, career flexibility, and opportunities for innovation.</div>
+                <div class="anchor"><a href="./blog-comp/blog_1.html">READ MORE</a></div>
+            </div>
+            <div class="thumbnail">
+                <div class="thumbnail-pic"><img src="./img/blogs/blog2.jpg" alt=""></div>
+                <div class="author">
+                    <div class="thumbnail-author-pic"></div>
+                    <div class="author-details">
+                        <div class="author-name">Marlon G. Delima Jr.</div>
+                        <div class="date-time"><p>07/04/23 9:12PM</p></div>
+                    </div>
+                </div>
+                <div class="thumbnail-title"><h3>The Top Skills You'll Learn as a BSIT Student</h3></div>
+                <div class="thumbnail-desc">By developing these skills and more, you'll be well-prepared for a successful career in information technology.</div>
+                <div class="anchor"><a href="./blog-comp/blog_2.html">READ MORE</a></div>
+            </div>
+
+            <div class="thumbnail">
+                <div class="thumbnail-pic"><img src="./img/blogs/blog3.jpg" alt=""></div>
+                <div class="author">
+                    <div class="thumbnail-author-pic"></div>
+                    <div class="author-details">
+                        <div class="author-name">Marlon G. Delima Jr.</div>
+                        <div class="date-time"><p>08/04/23 7:12PM</p></div>
+                    </div>
+                </div>
+                <div class="thumbnail-title"><h3>The Latest Trends and Innovations in BSIT</h3></div>
+                <div class="thumbnail-desc">By staying up-to-date on these trends and innovations, you'll be well-prepared to tackle the challenges of a rapidly evolving field.</div>
+                <div class="anchor"><a href="./blog-comp/blog_3.html">READ MORE</a></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="col">
+            <img src="./img/footerlogo.png" alt="">
+            <p>Hi there! My name is Marlon Delima Jr, and I recently graduated from New Era University with a bachelor's degree in Information Technology. I'm excited to pursue a career in web development and software development, and I'm currently looking for job opportunities in these fields.</p>
+            <div class="sitemap">
+                <a href="./index.html">HOME</a>
+                <a href="./skills.html">SKILLS</a>
+                <a href="./blogs.html">BLOGS</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+
+            <div class="accounts-link">
+                <a href="https://www.facebook.com/MarlonNotFive"><img src="./img/Fb.png" alt=""></a>
+                <a href="https://www.instagram.com/mar_lone.exe/"><img src="./img/insta.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/marlonnotfive/"><img src="./img/linkedin.png" alt=""></a>
+                <a href="https://github.com/MarlonNotfive"><img src="./img/animated_icons/github.png" alt=""></a>
+            </div>
+
+        </div>
+        <p class="credits">Made by: Marlon Delima Jr. Using HTML, CSS, JAVASCRIPT</p>
+    </footer>
+</body>
+
+<script>
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("navi");
+
+    burger.addEventListener("click", function() {
+    burger.classList.toggle("active");
+    nav.classList.toggle("show");
+});
+</script>
+
+</html>
